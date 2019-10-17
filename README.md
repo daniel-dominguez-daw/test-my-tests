@@ -17,10 +17,10 @@ OR
 chmod +x comproba_tests.sh
 ./comproba_tests.sh
 ```
-
-## Requisites
-
-Every exercise has to be in a folder starting with a number following the documentation.
+![Sample](https://raw.githubusercontent.com/daniel-dominguez-daw/test-my-tests/master/rPqLdQmkZb.gif)
 
 ## Know Issues
+
 It may break if two py files are in the same folder.
+
+Every exercise has to be in a folder starting with a number following the documentation.
