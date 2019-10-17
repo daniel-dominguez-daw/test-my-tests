@@ -5,8 +5,8 @@ Tests [moiatgit jda daw m03](https://moiatgit.github.io/jda.daw.m03/) exercises
 ## Usage
 ```bash
 cd introprg
-wget https://raw.githubusercontent.com/daniel-dominguez-daw/test-my-tests/master/comproba_test.sh
-sh comproba_test.sh
+wget https://raw.githubusercontent.com/daniel-dominguez-daw/test-my-tests/master/comproba_tests.sh
+sh comproba_tests.sh
 ```
 
 ## Requisites
