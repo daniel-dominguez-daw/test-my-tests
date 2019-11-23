@@ -16,7 +16,7 @@ Tests [moiatgit jda daw m03](https://moiatgit.github.io/jda.daw.m03/) exercises
 ### Get the script directly
 ```bash
 cd introprg
-wget -r --tries=10 https://raw.githubusercontent.com/daniel-dominguez-daw/test-my-tests/master/test_my_tests.sh -o test_my_tests.sh
+wget -r --tries=10 https://raw.githubusercontent.com/daniel-dominguez-daw/test-my-tests/master/test_my_tests.sh -O test_my_tests.sh
 ```
 
 ## You can execute it by using
