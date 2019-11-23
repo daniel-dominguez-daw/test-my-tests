@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # author: <cf19daniel.dominguez@iesjoandaustria.org>
 
-VERSION='0.2.0'
+VERSION='2.0.0'
 REVERSE=false
 LIMIT=0
 GROUP=0
