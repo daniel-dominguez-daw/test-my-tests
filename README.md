@@ -37,7 +37,7 @@ Use alias with preconfigured options. For example:
 
 ![Sample](https://raw.githubusercontent.com/daniel-dominguez-daw/test-my-tests/master/rPqLdQmkZb.gif)
 
-## Know Issues
+## Known Issues
 It may break if two py files are in the same folder.
 
 Every exercise has to be in a folder starting with a number following the documentation. examples: `00_01_name` `02_25_name`
