@@ -20,7 +20,7 @@ Tests [moiatgit jda daw m03](https://moiatgit.github.io/jda.daw.m03/) exercises
 ### Get the script directly
 ```bash
 cd introprg
-wget -r --tries=10 https://raw.githubusercontent.com/daniel-dominguez-daw/test-my-tests/master/test_my_tests.sh -o test_my_tests.sh
+wget -r --tries=10 https://raw.githubusercontent.com/daniel-dominguez-daw/test-my-tests/master/test_my_tests.sh -O test_my_tests.sh
 ```
 
 ## You can execute it by using
@@ -41,6 +41,7 @@ Use alias with preconfigured options. For example:
 
 ![Sample](https://raw.githubusercontent.com/daniel-dominguez-daw/test-my-tests/master/rPqLdQmkZb.gif)
 
+<<<<<<< HEAD
 ## Know Issues
 It relies on having junit in your $CLASSPATH variable. You should edit your ~/.bashrc and add this to the end:
 ```bash
