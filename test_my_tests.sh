@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # author: <cf19daniel.dominguez@iesjoandaustria.org>
 
-VERSION='2.0.0'
+VERSION='2.2.0'
 REVERSE=false
 LIMIT=0
 GROUP=0
@@ -73,9 +73,18 @@ else
     LS_CMD="ls $MOD_REVERSE | egrep '^[0-9]{2}_[0-9]{2}_*' $MOD_LIMIT"
 fi
 
+
 for d in $( eval $LS_CMD ); do
     # change dir to the task directory d
     cd "$d"
+
+    # recompiles all java files first (relies on having classpath with junit in ~/bashrc)
+    javafiles=`find . -name '*.java'`
+    
+    if [ ! -z "$javafiles" ]; then # if $javafiles has some java files then compile
+        javac $javafiles
+    fi
+
     # DIR equals to the task directory name after a cut of 1-12 characters, followed by ~
     DIR=$(echo $d | cut -c1-12)~
 
@@ -85,7 +94,7 @@ for d in $( eval $LS_CMD ); do
         TEST_BASHTEST=$(bash $BASH_TEST_FILE)
 
         # if TEST_BASHTEST has the words "ha passat totes" then...
-        if [[ "$TEST_BASHTEST" =~ ha\ passat\ totes ]]; then
+        if [[ "$TEST_BASHTEST" =~ ^El\ programa ]] && [[ "$TEST_BASHTEST" =~ ha\ passat\ totes\ les\ proves$ ]]; then
             # Print with a color green the value of DIR, tabbed, then bashtest: [OK]
             echo -e "\e[92m$DIR:\t bashtest: [OK]"
         else
